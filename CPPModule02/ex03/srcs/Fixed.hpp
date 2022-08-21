@@ -6,7 +6,7 @@
 /*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 13:07:49 by schuah            #+#    #+#             */
-/*   Updated: 2022/08/20 20:19:42 by schuah           ###   ########.fr       */
+/*   Updated: 2022/08/21 09:29:08 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Fixed
 	public:
 		/* Constructor and destructor functions */
 		Fixed();
-		Fixed(const Fixed &a);
+		Fixed(const Fixed &src);
 		Fixed(const int input);
 		Fixed(const float input);
 		~Fixed();
@@ -59,7 +59,6 @@ class Fixed
 		static const Fixed	&min(Fixed const &n1, Fixed const &n2);
 		static Fixed		&max(Fixed &n1, Fixed &n2);
 		static const Fixed	&max(Fixed const &n1, Fixed const &n2);
-
 	private:
 		int					_number;
 		static const int	_bits = 8;

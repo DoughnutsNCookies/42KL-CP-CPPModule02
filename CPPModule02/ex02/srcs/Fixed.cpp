@@ -6,7 +6,7 @@
 /*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 13:09:35 by schuah            #+#    #+#             */
-/*   Updated: 2022/08/20 21:31:07 by schuah           ###   ########.fr       */
+/*   Updated: 2022/08/21 09:28:29 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ Fixed::Fixed()
 }
 
 /* Copy constructor function of Fixed class */
-Fixed::Fixed(const Fixed &a)
+Fixed::Fixed(const Fixed &src)
 {
-	*this = a;
+	*this = src;
 }
 
 /* Constructor function for int input of Fixed class
@@ -179,25 +179,25 @@ Fixed	Fixed::operator--(int)
 /* Input: two references to fpn, returns a reference to the smallest one */
 Fixed	&Fixed::min(Fixed &n1, Fixed &n2)
 {
-	return (n1 <= n2 ? n1 : n2);
+	return (n1.toFloat() <= n2.toFloat() ? n1 : n2);
 }
 
 /* Input: two references to constant fpn, returns a reference to the smallest one */
 const Fixed	&Fixed::min(Fixed const &n1, Fixed const &n2)
 {
-	return (n1 <= n2 ? n1 : n2);
+	return (n1.toFloat() <= n2.toFloat() ? n1 : n2);
 }
 
 /* Input: two references to fpn, returns a reference to the biggest one */
 Fixed	&Fixed::max(Fixed &n1, Fixed &n2)
 {
-	return (n1 >= n2 ? n1 : n2);
+	return (n1.toFloat() >= n2.toFloat() ? n1 : n2);
 }
 
 /* Input: two references to constant fpn, returns a reference to the biggest one */
 const Fixed	&Fixed::max(Fixed const &n1, Fixed const &n2)
 {
-	return (n1 >= n2 ? n1 : n2);
+	return (n1.toFloat() >= n2.toFloat() ? n1 : n2);
 }
 
 /* Function when << operator is called
