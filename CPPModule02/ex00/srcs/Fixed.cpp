@@ -32,7 +32,7 @@ Fixed::~Fixed()
 	std::cout << "Destructor called" << std::endl;
 }
 
-/* Assignation operator function of Fixed class */
+/* Copy assignation operator function of Fixed class */
 Fixed	&Fixed::operator=(const Fixed &rhs)
 {
 	std::cout << "Copy assignation operator called" << std::endl;
