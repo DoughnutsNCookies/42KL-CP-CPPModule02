@@ -6,11 +6,11 @@
 #    By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/07 10:52:13 by schuah            #+#    #+#              #
-#    Updated: 2022/08/20 13:07:44 by schuah           ###   ########.fr        #
+#    Updated: 2022/08/21 11:09:25 by schuah           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	ocf
+NAME		=	fpn
 CC			=	c++
 RM			=	rm -f
 CFLAGS		=	-Wall -Wextra -Werror -std=c++98 -pedantic
