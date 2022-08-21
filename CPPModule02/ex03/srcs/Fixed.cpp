@@ -45,7 +45,7 @@ Fixed::~Fixed()
 
 }
 
-/* Assignation operator function of Fixed class */
+/* Copy Assignation operator function of Fixed class */
 Fixed	&Fixed::operator=(const Fixed &src)
 {
 	this->_number = src.getRawBits();
