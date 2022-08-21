@@ -24,6 +24,8 @@ static float get_area(Point const a, Point const b, Point const c)
 	return (area >= 0 ? area : (area * -1));
 }
 
+/* Returns true if area of PAB, PBC and PAC is equal to ABC
+** Returns flase if area of PAB, PBC and PAC are 0 and point is not at 0, 0 */
 bool	bsp(Point const a, Point const b, Point const c, Point const point)
 {
 	float	t_abc, t_pab, t_pbc, t_pac;
