@@ -71,4 +71,5 @@ int	main(void)
 		else
 			std::cout << "False" << std::endl;
 	}
+	return (0);
 }
