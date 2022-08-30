@@ -6,7 +6,7 @@
 /*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 13:09:35 by schuah            #+#    #+#             */
-/*   Updated: 2022/08/21 09:28:29 by schuah           ###   ########.fr       */
+/*   Updated: 2022/08/30 19:07:38 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,42 +77,42 @@ int		Fixed::toInt(void) const
 }
 
 /* Comparison operator function (>) of Fixed class
-** Returns true if lhs is bigger than rhs, else returns false */
+** Returns true if lhs is bigger than src, else returns false */
 bool	Fixed::operator>(Fixed src) const
 {
 	return (this->toFloat() > src.toFloat());
 }
 
 /* Comparison operator function (<) of Fixed class
-** Returns true if lhs is smaller than rhs, else returns false */
+** Returns true if lhs is smaller than src, else returns false */
 bool	Fixed::operator<(Fixed src) const
 {
 	return (this->toFloat() < src.toFloat());
 }
 
 /* Comparison operator function (>=) of Fixed class
-** Returns true if lhs is bigger than or equal to rhs, else returns false */
+** Returns true if lhs is bigger than or equal to src, else returns false */
 bool	Fixed::operator>=(Fixed src) const
 {
 	return (this->toFloat() >= src.toFloat());
 }
 
 /* Comparison operator function (>=) of Fixed class
-** Returns true if lhs is smaller than or equal to rhs, else returns false */
+** Returns true if lhs is smaller than or equal to src, else returns false */
 bool	Fixed::operator<=(Fixed src) const
 {
 	return (this->toFloat() <= src.toFloat());
 }
 
 /* Comparison operator function (==) of Fixed class
-** Returns true if lhs is equal to rhs, else returns false */
+** Returns true if lhs is equal to src, else returns false */
 bool	Fixed::operator==(Fixed src) const
 {
 	return (this->toFloat() == src.toFloat());
 }
 
 /* Comparison operator function (!=) of Fixed class 
-** Returns true if lhs is not equal to rhs, else returns false*/
+** Returns true if lhs is not equal to src, else returns false*/
 bool	Fixed::operator!=(Fixed src) const
 {
 	return (this->toFloat() != src.toFloat());
@@ -202,8 +202,8 @@ const Fixed	&Fixed::max(Fixed const &n1, Fixed const &n2)
 
 /* Function when << operator is called
 ** Gets the number's float from the class and outputs it to output stream */
-std::ostream	&operator<<(std::ostream &output, const Fixed &rhs)
+std::ostream	&operator<<(std::ostream &output, const Fixed &src)
 {
-	output << rhs.toFloat();
+	output << src.toFloat();
 	return (output);
 }

@@ -6,7 +6,7 @@
 /*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 13:09:35 by schuah            #+#    #+#             */
-/*   Updated: 2022/08/20 18:51:36 by schuah           ###   ########.fr       */
+/*   Updated: 2022/08/30 19:07:38 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,10 @@ Fixed::~Fixed()
 }
 
 /* Copy assignation operator function of Fixed class */
-Fixed	&Fixed::operator=(const Fixed &rhs)
+Fixed	&Fixed::operator=(const Fixed &src)
 {
 	std::cout << "Copy assignation operator called" << std::endl;
-	this->_number = rhs.getRawBits();
+	this->_number = src.getRawBits();
 	return (*this);
 }
 

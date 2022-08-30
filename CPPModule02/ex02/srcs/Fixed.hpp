@@ -6,7 +6,7 @@
 /*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 13:07:49 by schuah            #+#    #+#             */
-/*   Updated: 2022/08/21 09:27:22 by schuah           ###   ########.fr       */
+/*   Updated: 2022/08/30 19:07:38 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,6 +64,6 @@ class Fixed
 		static const int	_bits = 8;
 };
 
-std::ostream	&operator<<(std::ostream &output, const Fixed &rhs);
+std::ostream	&operator<<(std::ostream &output, const Fixed &src);
 
 #endif

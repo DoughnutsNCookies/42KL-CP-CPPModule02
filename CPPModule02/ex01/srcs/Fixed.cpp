@@ -6,7 +6,7 @@
 /*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 13:09:35 by schuah            #+#    #+#             */
-/*   Updated: 2022/08/20 19:47:22 by schuah           ###   ########.fr       */
+/*   Updated: 2022/08/30 19:07:38 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,8 +83,8 @@ int		Fixed::toInt(void) const
 
 /* Function when << operator is called
 ** Gets the number's float from the class and outputs it to output stream */
-std::ostream	&operator<<(std::ostream &output, const Fixed &rhs)
+std::ostream	&operator<<(std::ostream &output, const Fixed &src)
 {
-	output << rhs.toFloat();
+	output << src.toFloat();
 	return (output);
 }
