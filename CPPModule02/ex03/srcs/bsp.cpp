@@ -6,7 +6,7 @@
 /*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/21 09:46:10 by schuah            #+#    #+#             */
-/*   Updated: 2023/03/07 16:14:03 by schuah           ###   ########.fr       */
+/*   Updated: 2023/03/07 16:14:39 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static bool	on_line(Point const a, Point const b, Point const p)
 	dy = b.getY() - a.getY();
 	m = dy / dx;
 	c = a.getY() - a.getX() * m;
-	return (p.getY() == (m * p.getX() + c))
+	return (p.getY() == (m * p.getX() + c));
 }	
 
 /* Area of a triangle: [Ax(By - Cy) + Bx(Cy - Ay) + Cx(Ay - By)] / 2

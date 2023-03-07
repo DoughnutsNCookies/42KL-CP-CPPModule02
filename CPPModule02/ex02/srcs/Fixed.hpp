@@ -6,7 +6,7 @@
 /*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 13:07:49 by schuah            #+#    #+#             */
-/*   Updated: 2022/08/30 19:07:38 by schuah           ###   ########.fr       */
+/*   Updated: 2023/03/07 15:58:51 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,10 @@ class Fixed
 		bool				operator!=(Fixed src) const;
 
 		/* Arithmetic operator functions */
-		float				operator+(Fixed src) const;
-		float				operator-(Fixed src) const;
-		float				operator*(Fixed src) const;
-		float				operator/(Fixed src) const;
+		Fixed				operator+(Fixed src) const;
+		Fixed				operator-(Fixed src) const;
+		Fixed				operator*(Fixed src) const;
+		Fixed				operator/(Fixed src) const;
 
 		/* Post-increment/reduction and Pre-increment/reduction functions */
 		Fixed				operator++();
