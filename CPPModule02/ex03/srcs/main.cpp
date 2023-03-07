@@ -6,7 +6,7 @@
 /*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/21 10:12:14 by schuah            #+#    #+#             */
-/*   Updated: 2022/09/07 19:26:24 by schuah           ###   ########.fr       */
+/*   Updated: 2023/03/07 16:12:42 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,28 @@ bool	bsp(Point const a, Point const b, Point const c, Point const point);
 
 int	main(void)
 {
+	{
+		Point	a(0, 0);
+		Point	b(10, 0);
+		Point	c(0, 10);
+		Point	point(0, 0);
+
+		if (bsp(a, b, c, point) == true)
+			std::cout << "True" << std::endl;
+		else
+			std::cout << "False" << std::endl;
+	}
+	{
+		Point	a(0, 0);
+		Point	b(5, 5);
+		Point	c(0, 10);
+		Point	point(2.5f, 2.5f);
+
+		if (bsp(a, b, c, point) == true)
+			std::cout << "True" << std::endl;
+		else
+			std::cout << "False" << std::endl;
+	}
 	{
 		Point	a(0, 0);
 		Point	b(10, 0);

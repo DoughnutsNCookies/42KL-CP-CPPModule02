@@ -6,11 +6,23 @@
 /*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/21 09:46:10 by schuah            #+#    #+#             */
-/*   Updated: 2022/09/07 19:25:35 by schuah           ###   ########.fr       */
+/*   Updated: 2023/03/07 16:14:03 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Point.hpp"
+
+/* Returns true if the point is on the line, else false */
+static bool	on_line(Point const a, Point const b, Point const p)
+{
+	Fixed	m, c, dx, dy;
+
+	dx = b.getX() - a.getX();
+	dy = b.getY() - a.getY();
+	m = dy / dx;
+	c = a.getY() - a.getX() * m;
+	return (p.getY() == (m * p.getX() + c))
+}	
 
 /* Area of a triangle: [Ax(By - Cy) + Bx(Cy - Ay) + Cx(Ay - By)] / 2
 ** Return absolute value because area cannot be <= 0 */
@@ -34,8 +46,7 @@ bool	bsp(Point const a, Point const b, Point const c, Point const point)
 	t_pab = get_area(point, a, b);
 	t_pbc = get_area(point, b, c);
 	t_pac = get_area(point, a, c);
-	if (a.getX() == 0 && a.getY() == 0 && b.getX() == 0 && b.getY() == 0
-		&& c.getX() == 0 && c.getY() == 0 && (point.getX() != 0 || point.getY() != 0))
-			return (false);
+	if (on_line(a, b, point) || on_line(b, c, point) || on_line(a, c, point))
+		return (false);
 	return (t_pab + t_pbc + t_pac == t_abc ? true : false);
 }

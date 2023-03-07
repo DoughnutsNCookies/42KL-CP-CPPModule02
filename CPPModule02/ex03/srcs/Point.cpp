@@ -6,7 +6,7 @@
 /*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/21 09:31:55 by schuah            #+#    #+#             */
-/*   Updated: 2022/08/21 10:34:22 by schuah           ###   ########.fr       */
+/*   Updated: 2023/03/07 16:04:59 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Point::Point(): _x(0), _y(0)
 }
 
 /* Constructor function for const float input of Point class */
-Point::Point(const float x, const float y): _x(x), _y(y)
+Point::Point(const Fixed x, const Fixed y): _x(x), _y(y)
 {
 	
 }

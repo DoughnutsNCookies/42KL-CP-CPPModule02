@@ -6,7 +6,7 @@
 /*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 13:09:35 by schuah            #+#    #+#             */
-/*   Updated: 2022/08/30 19:07:38 by schuah           ###   ########.fr       */
+/*   Updated: 2023/03/07 15:59:36 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,25 +119,25 @@ bool	Fixed::operator!=(Fixed src) const
 }
 
 /* Arithmetic operator function (+) of Fixed class */
-float	Fixed::operator+(Fixed src) const
+Fixed	Fixed::operator+(Fixed src) const
 {
 	return (this->toFloat() + src.toFloat());
 }
 
 /* Arithmetic operator function (-) of Fixed class */
-float	Fixed::operator-(Fixed src) const
+Fixed	Fixed::operator-(Fixed src) const
 {
 	return (this->toFloat() - src.toFloat());
 }
 
 /* Arithmetic operator function (*) of Fixed class */
-float	Fixed::operator*(Fixed src) const
+Fixed	Fixed::operator*(Fixed src) const
 {
 	return (this->toFloat() * src.toFloat());
 }
 
 /* Arithmetic operator function (/) of Fixed class */
-float	Fixed::operator/(Fixed src) const
+Fixed	Fixed::operator/(Fixed src) const
 {
 	return (this->toFloat() / src.toFloat());
 }

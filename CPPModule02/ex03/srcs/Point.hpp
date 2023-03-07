@@ -6,7 +6,7 @@
 /*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/21 09:23:28 by schuah            #+#    #+#             */
-/*   Updated: 2022/08/21 10:34:27 by schuah           ###   ########.fr       */
+/*   Updated: 2023/03/07 16:04:54 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class Point
 	public:
 		/* Constructor and destructor functions */
 		Point();
-		Point(const float x, const float y);
+		Point(const Fixed x, const Fixed y);
 		Point(const Point &src);
 		~Point();
 
