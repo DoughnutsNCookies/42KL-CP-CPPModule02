@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
+/*   By: schuah <schuah@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 13:07:49 by schuah            #+#    #+#             */
-/*   Updated: 2023/03/07 15:58:51 by schuah           ###   ########.fr       */
+/*   Updated: 2023/04/20 20:55:14 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,8 @@ class Fixed
 		Fixed				operator/(Fixed src) const;
 
 		/* Post-increment/reduction and Pre-increment/reduction functions */
-		Fixed				operator++();
-		Fixed				operator--();
+		Fixed				&operator++();
+		Fixed				&operator--();
 		Fixed				operator++(int);
 		Fixed				operator--(int);
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: schuah <schuah@student.42kl.edu.my>        +#+  +:+       +#+        */
+/*   By: schuah <schuah@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/20 13:09:35 by schuah            #+#    #+#             */
-/*   Updated: 2023/03/07 15:58:47 by schuah           ###   ########.fr       */
+/*   Updated: 2023/04/20 20:55:22 by schuah           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -143,14 +143,14 @@ Fixed	Fixed::operator/(Fixed src) const
 }
 
 /* Pre-increment operator function (++n) of Fixed class */
-Fixed	Fixed::operator++()
+Fixed	&Fixed::operator++()
 {
 	this->_number++;
 	return (*this);
 }
 
 /* Pre-reduction operator function (--n) of Fixed class */
-Fixed	Fixed::operator--()
+Fixed	&Fixed::operator--()
 {
 	this->_number--;
 	return (*this);
